@@ -3,5 +3,5 @@
 
 ## Table of Content
 
-- [A Simple WordPress App](https://github.com/ajeetraina/compose-demos/blob/main/wordpress/README.md)
-- [Wordpress App with Secrets](https://github.com/ajeetraina/compose-demos/tree/main/wordpress/secrets/README.md)
+- [Docker Compose: A Simple WordPress App Demo](https://github.com/ajeetraina/compose-demos/blob/main/wordpress/README.md)
+- [Compose and Secrets: Wordpress App](https://github.com/ajeetraina/compose-demos/tree/main/wordpress/secrets/README.md)
