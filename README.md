@@ -30,6 +30,7 @@ docker run -d --name wordpress \
   -e WORDPRESS_DB_PASSWORD=wordpress \
   -e WORDPRESS_DB_NAME=wordpress \
   -p 80:80 \
+  --link db:db \
   wordpress:latest
 ```
 
