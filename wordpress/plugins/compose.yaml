@@ -16,7 +16,7 @@ services:
       - 33060
 
   wordpress:
-    build: ./wordpress
+    build: . 
     ports:
       - 80:80
     restart: always
