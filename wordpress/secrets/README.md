@@ -26,3 +26,10 @@ Replace "your_db_password_here" and "your_db_root_password_here" with the actual
 ## Place the Secret Files:
 
 Place the created secret files in the same directory as your docker-compose.yml file or any directory where you plan to run your Docker Compose stack. The paths in your docker-compose.yml file should be relative to the location where you store these files.
+
+## Bring up the app
+
+```
+docker compose up -d -build
+```
+
