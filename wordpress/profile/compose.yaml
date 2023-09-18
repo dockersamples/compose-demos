@@ -16,6 +16,8 @@ services:
     expose:
       - 3306
       - 33060
+    profiles: ["prod", "dev"]
+    
   wordpress:
     image: wordpress:latest
     ports:
@@ -28,6 +30,15 @@ services:
       - WORDPRESS_DB_NAME=wordpress
     depends_on:
       - db
+    profiles: ["prod"]
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    platform: linux/amd64
+    links:
+      - db:mysql
+    profiles: ["dev"]
+
 
 volumes:
   db_data:
