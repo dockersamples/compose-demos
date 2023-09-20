@@ -1,6 +1,7 @@
 
 include: 
-  - common-services.yaml
+  - common-dbservice.yaml
+  - common-phpmyadmin.yaml
 
 services:
 
