@@ -31,14 +31,22 @@ services:
     depends_on:
       - db
     profiles: ["prod"]
+    
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     platform: linux/amd64
     links:
       - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
     profiles: ["dev"]
-
+   #supply db as hostname, wordpress as username and password
 
 volumes:
   db_data:
