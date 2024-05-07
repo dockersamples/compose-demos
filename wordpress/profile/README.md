@@ -4,7 +4,7 @@
 ## Bring up only Dev Environment
 
 ```
- docker-compose --profile dev up
+ docker compose --profile dev up
 ```
 
 It will bring up PhyMyAdmin and MySQL
@@ -13,12 +13,12 @@ It will bring up PhyMyAdmin and MySQL
 
 
 ```
- docker-compose --profile dev down
+ docker compose --profile dev down
 ```
 
 ## Bring up Prod Environment
 
 ```
- docker-compose --profile prod up
+ docker compose --profile prod up
 ```
  
